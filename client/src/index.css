@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  font-family: "Lexend Deca", serif !important;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+.link:hover{
+  color: #fff;
+}
+
+
+.link2:hover{
+  color: #ff5252;
+}
