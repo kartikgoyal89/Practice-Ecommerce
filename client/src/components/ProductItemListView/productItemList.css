@@ -1,0 +1,14 @@
+
+
+.productItemList .title{
+    line-height: 17px;
+}
+
+
+.productItemList .actions{
+    transition: 0.3s all ease-in-out;
+}
+
+.productItemList .swiper-wrapper .swiper-slide{
+    margin-right: 0px !important;
+}

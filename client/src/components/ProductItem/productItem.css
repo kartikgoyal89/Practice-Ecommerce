@@ -1,0 +1,17 @@
+
+
+.productItem .title{
+    line-height: 17px;
+}
+
+.productItem:hover{
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.08),-2px -5px 4px rgba(0,0,0,0.02);
+}
+
+.productItem .actions{
+    transition: 0.3s all ease-in-out;
+}
+
+.productItem .swiper-wrapper .swiper-slide{
+    margin-right: 0px !important;
+}

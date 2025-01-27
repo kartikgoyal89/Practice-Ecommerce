@@ -1,0 +1,9 @@
+
+.homeCatSlider a img:hover{
+    transition: all 0.4s ease-in-out;
+    scale: 1.08;
+}
+
+.item{
+    box-shadow: 2px 3px 6px rgba(0,0,0,0.1);
+}

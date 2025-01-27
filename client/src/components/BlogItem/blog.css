@@ -1,0 +1,17 @@
+
+
+.blog-actions{
+    position: absolute;
+    top: 30% !important;
+    left:50% !important;
+    transform: translate(-50%,-50%);
+}
+.blog-actions button{
+    border: 2px solid #fff !important;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.blogItem:hover .blog-actions button{
+    opacity: 1;
+}

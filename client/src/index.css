@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -10,16 +10,166 @@
   font-family: "Lexend Deca", serif !important;
 }
 
-.container{
-  width: 90%;
+body {
+  background: #f5f0f0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 95%;
   margin: auto;
 }
 
-.link:hover{
+.link:hover {
   color: #fff;
 }
 
 
-.link2:hover{
+.link2:hover {
   color: #ff5252;
+}
+
+nav button {
+  text-transform: capitalize !important;
+}
+
+nav button:hover {
+  color: #ff5252 !important;
+  background-color: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white !important;
+}
+
+
+.MuiTabs-indicator {
+  background-color: #ff5252 !important;
+}
+
+.Mui-selected {
+  color: #ff5252 !important;
+}
+
+.productsSlider .swiper-wrapper {
+  padding: 14px;
+  margin-right: -14px !important;
+  margin-left: -14px;
+}
+
+.gridActive{
+  background-color: #ff5252 !important;
+  color: black !important;
+}
+
+.product-listing .css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: rgb(255, 82, 82,0.2);
+  border: 1px solid #ff5252; 
+}
+.product-listing .css-vs6a7b-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected:hover{
+  background-color: rgb(255, 82, 82,0.2);  
+}
+.product-listing ul.MuiPagination-ul li{
+  margin-right: 15px !important;
+}
+.product-listing ul.MuiPagination-ul li button.MuiButtonBase-root{
+  height: 35px !important;
+  width: 35px !important;
+  font-size: 15px !important;
+}
+
+.zoomProductSliderThumbs{
+  height: 70vh !important;
+  overflow: hidden !important;
+  margin: auto !important;
+  padding: auto !important;
+}
+.zoomProductSliderThumbs .swiper-slide{
+  height: 80px !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-next{
+  bottom: 0px !important;
+  top: inherit !important;
+  right:  inherit !important;
+  height: 30px !important;
+  width: 100% !important;
+  border-radius: 0px !important;
+  background-color: white !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-next::after{
+  transform: rotate(90deg);
+}
+
+.zoomProductSliderThumbs .swiper-button-prev::after{
+  transform: rotate(90deg);
+}
+
+
+.zoomProductSliderThumbs .swiper-button-prev{
+  top: 20px !important;
+  left: 0px !important; 
+  width: 100% !important;
+  height: 30px !important;
+  border-radius: 0px !important;
+  background-color: white !important;
+}
+
+
+.productZoomWrapper .slider{
+  padding-top: 30px !important;
+}
+
+.productZoomWrapper .active{
+  opacity: 1 !important;
+}
+
+.productDetailsWrapper .actionsSize button{
+  border: 1px solid #555;
+}
+
+
+.productDetailsWrapper .productActionActive{
+  background-color: #ff5252;
+  color: white !important;
+  border: none !important;
+}
+
+
+.qtyBox input[type='number']::-webkit-inner-spin-button,
+.qtyBox input[type='number']::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.productDetailsWrapper .MuiFormLabel-root {
+  color: #ff5252 !important;
+}
+
+
+.css-xrmkj5-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline{
+  border-color: #ff5252 !important;
+}
+
+.productDetailsWrapper textarea{
+  outline: 2px solid #ff5252 !important;
+  padding: 10px;
+  border-radius: 5px;
+  color: black !important;
+  opacity: 1 !important;
+}
+
+.productDetailsWrapper textarea::placeholder{
+  color: #555 !important;
 }

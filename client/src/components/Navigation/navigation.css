@@ -1,0 +1,19 @@
+/* .navigation-header ul.nav li:hover .hover-submenu{
+    opacity: 1 !important;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px -0.6px 5px rgba(0,0,0,0.2);
+    z-index: 10 !important;
+} 
+
+
+.navigation-header ul.nav li .hover-submenu li .hover-submenu{
+    top: 0px;
+    left: 120% !important;
+    opacity: 0 !important;
+    box-shadow: 0px -0.6px 5px rgba(0,0,0,0.2);
+}
+.navigation-header .nav li .hover-submenu:hover li .inner-hover-submenu{
+    left: 100% !important;
+    opacity: 1 !important;
+}
+ */

@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { Badge } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
@@ -10,7 +11,10 @@ import Logo from "../../assets/logo2.png";
 import Search from "../../components/Search/Search";
 import "./header.css";
 
+import Navigation from "../Navigation/Navigation";
+
 import Tooltip from "@mui/material/Tooltip";
+import { MyContext } from "../../App";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -22,9 +26,10 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 const Header = () => {
+  const context = useContext(MyContext);
   return (
     <>
-      <header>
+      <header className="bg-white">
         {/* TOP STRIP */}
         <div className="top-strip py-2 bg-primary border-b-[1px]">
           <div className="container">
@@ -61,7 +66,7 @@ const Header = () => {
         </div>
 
         {/* BOTTOM STRIP */}
-        <div className="header py-3">
+        <div className="header py-0 border-b-[1px]">
           <div className="container flex items-center justify-between">
             <div className="col1 w-[20%]">
               <Link to={"/"}>
@@ -90,16 +95,6 @@ const Header = () => {
                 </li>
 
                 <li className="pl-5">
-                  <Tooltip title="Cart">
-                    <IconButton aria-label="cart">
-                      <StyledBadge badgeContent={4} color="secondary">
-                        <IoCartOutline className="!text-[30px]" />
-                      </StyledBadge>
-                    </IconButton>
-                  </Tooltip>
-                </li>
-
-                <li>
                   <Tooltip title="Compare">
                     <IconButton aria-label="compare">
                       <StyledBadge badgeContent={4} color="secondary">
@@ -118,10 +113,24 @@ const Header = () => {
                     </IconButton>
                   </Tooltip>
                 </li>
+                <li>
+                  <Tooltip title="Cart">
+                    <IconButton
+                      aria-label="cart"
+                      onClick={() => context.setOpenCartPanel(true)}
+                    >
+                      <StyledBadge badgeContent={4} color="secondary">
+                        <IoCartOutline className="!text-[30px]" />
+                      </StyledBadge>
+                    </IconButton>
+                  </Tooltip>
+                </li>
               </ul>
             </div>
           </div>
         </div>
+
+        <Navigation />
       </header>
     </>
   );
